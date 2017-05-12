@@ -1,4 +1,4 @@
-[![Create a Toolchain](https://console.ng.bluemix.net/devops/graphics/create_toolchain_button.png)](https://console.ng.bluemix.net/devops/setup/deploy?repository=https://github.com/carlomorgenstern/piwikbluemix-test)
+[![Create a Toolchain](https://console.ng.bluemix.net/devops/graphics/create_toolchain_button.png)](https://console.ng.bluemix.net/devops/setup/deploy?repository=https://github.com/carlomorgenstern/piwikbluemix)
 ### Piwik on Bluemix
 A minimal asset to get Piwik running on Bluemix fast.
 
