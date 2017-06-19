@@ -97,9 +97,9 @@ stages:
     script: |-
       #!/bin/bash
       # Creating ClearDB Service if it is not present yet
-      if [ -z $(cf s|grep piwikdb|cut -d" " -f1-1) ]; then
-        echo "Creating ClearDB MySQL Service named 'piwikdb'"
-        cf cs cleardb spark piwikdb > /dev/null 2>&1
+      if [ -z $(cf s|grep piwik_db|cut -d" " -f1-1) ]; then
+        echo "Creating ClearDB MySQL Service named 'piwik_db'"
+        cf cs cleardb spark piwik_db > /dev/null 2>&1
       fi
 
       cf push "${CF_APP}"
@@ -107,4 +107,4 @@ hooks:
 - enabled: true
   label: null
   ssl_enabled: false
-  url: https://devops-api.ng.bluemix.net/v1/messaging/webhook/publish
+  url: https://devops-api.w3ibm.bluemix.net/v1/messaging/webhook/publish
