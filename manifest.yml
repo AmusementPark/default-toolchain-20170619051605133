@@ -6,5 +6,3 @@ applications:
   path: .
   stack: cflinuxfs2
   buildpack: "https://github.com/cloudfoundry/php-buildpack"
-  services:
-    - piwikdb
